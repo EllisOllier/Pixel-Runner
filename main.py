@@ -46,8 +46,6 @@ def player_animation():
             player_index = 0
         player_surf = player_walk[int(player_index)]
         
-
-
 # Game init
 pygame.init()
 screen = pygame.display.set_mode((800, 400))
@@ -92,7 +90,6 @@ player_walk_1 = pygame.image.load('graphics/Player/player_walk_1.png').convert_a
 player_walk_2 = pygame.image.load('graphics/Player/player_walk_2.png').convert_alpha()
 player_walk = [player_walk_1, player_walk_2]
 player_index = 0
-
 
 player_surf = player_walk[player_index]
 player_rect = player_walk_1.get_rect(midbottom = (80,game_floor))
@@ -161,8 +158,6 @@ while True:
                     fly_frame_index = 0
                 fly_surf = fly_frames[fly_frame_index]
 
-        
-                        
     if game_active:
         screen.blit(sky_surf, (0,0))
         screen.blit(ground_surf, (0,game_floor))
